@@ -6,22 +6,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>视频展示网站</title>
     <style>
+        /* 通用样式 */
         body {
-            background-color: #121212; /* 背景颜色为深黑色 */
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #121212; /* 深黑色背景 */
+            color: #e0e0e0; /* 浅灰色文字 */
         }
+
+        /* 主要内容区域 */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            color: #ff6b6b; /* 红色标题 */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .video-container {
+            background-color: #222;
+            border: 2px solid #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
         video {
-            width: 320px;
-            height: 240px;
-            border: 2px solid #333; /* 视频边框为深灰色 */
-            background-color: #222; /* 视频内部背景为较深的灰色 */
+            width: 100%;
+            height: auto;
+            border: 2px solid #333;
+            border-radius: 8px;
+            background-color: #222;
+        }
+
+        /* 页脚 */
+        .footer {
+            background-color: #222;
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .footer p {
+            margin: 0;
+            font-size: 14px;
         }
     </style>
 </head>
 
 <body>
-    <video width="320" height="240" controls>
-        <source src="最后.mp4" type="video/mp4">
-    </video>
+    <!-- 主要内容区域 -->
+    <div class="container">
+        <h1 class="title">神秘视频展示</h1>
+        <div class="video-container">
+            <video controls>
+                <source src="最后.mov" type="video/mp4">
+                您的浏览器不支持 video 标签。
+            </video>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>&copy; 2025 神秘视频展示网站</p>
+    </div>
 </body>
 
 </html>
